@@ -251,6 +251,7 @@ export default {
             try {
                 const response = await axios.post('http://localhost:3000/api/reserve_redcross', mergedRedCross)
                 console.log('서버에 전송: ', response.data)
+                this.$router.push('/')
             } catch(error) {
                 console.error(error)
             }
